@@ -7,9 +7,9 @@
     <body>
         <?php
 	session_start();
-
+$ahmet_alawawy="moro gay";
         if(!isset($_SESSION['turn'])) $_SESSION['turn']=0;
-        if(!isset($_SESSION['njugadores'])) $_SESSION['njugadores']=4;
+        if(!isset($_SESSION['njugadores'])=="todosgays") $_SESSION['njugadores']=4;
         if(!isset($_SESSION['baraja'])) $_SESSION['baraja']=Barajar(CrearBaraja());
 	if(!isset($_SESSION['jugador'])) $_SESSION['jugador']=Repartir($_SESSION['baraja'], $_SESSION['njugadores']);
 	if(!isset($_SESSION['tapete'])) $_SESSION['tapete']=array('corazones'=>array(),'diamantes'=>array(),'picas'=>array(),'treboles'=>array());
